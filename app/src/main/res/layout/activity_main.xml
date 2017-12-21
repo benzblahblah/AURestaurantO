@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="benznatthakul.au_restaurant_o.MainActivity">
+
+    <Button
+        android:id="@+id/btnLoginFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="#3c66c4"
+        android:text="Log in with Facebook"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLoginFacebook"
+        android:layout_alignEnd="@+id/btnLoginFacebook"
+        android:layout_alignStart="@+id/btnLoginFacebook"
+        android:background="#000000"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passwordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailTxt"
+        android:layout_below="@+id/emailTxt"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="numberPassword" />
+
+    <TextView
+        android:id="@+id/regTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLoginFacebook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Register"
+        android:textSize="18sp" />
+
+</RelativeLayout>
