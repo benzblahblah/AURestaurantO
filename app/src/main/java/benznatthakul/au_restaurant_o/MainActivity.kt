@@ -19,6 +19,7 @@ import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_timeline.*
 import java.util.*
 
 
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnLoginEmail = findViewById<Button>(R.id.btnLoginEmail)
         val regTxt = findViewById<View>(R.id.regTxt) as TextView
+
 
         btnLoginEmail.setOnClickListener(View.OnClickListener {
             view -> login()

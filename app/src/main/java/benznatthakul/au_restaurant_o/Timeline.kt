@@ -22,6 +22,10 @@ class Timeline : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timeline)
 
+        BtnHomeP.setOnClickListener(View.OnClickListener {
+            view -> homepage()
+        })
+
         val nameTxt = findViewById<View>(R.id.dispTxt) as TextView
 
         var uid = user!!.uid
@@ -46,12 +50,17 @@ class Timeline : AppCompatActivity() {
 //        return super.onCreateOptionsMenu(menu)
 //    }
 
+    private fun homepage() {
+        startActivity(Intent(this, RestaurantList :: class.java))
+    }
+
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         if (item!!.itemId == R.id.btnLogout) {
             mAuth.signOut()
             Toast.makeText(this, "Signed Out :(", Toast.LENGTH_LONG).show()
             startActivity(Intent(this, MainActivity::class.java))
         }
+
         return super.onOptionsItemSelected(item)
     }
 

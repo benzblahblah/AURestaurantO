@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AU-Restaurant-O</string>
+    <string name="app_name">AU Restaurant Owner</string>
     <string name="facebook_app_id">356833278123060</string>
     <string name="fb_login_protocol_scheme">fb356833278123060</string>
     <string name="title_activity_register">Register</string>
@@ -8,5 +8,6 @@
     <string name="register">Register</string>
     <string name="email">Email</string>
     <string name="sign_up">Sign Up</string>
+    <string name="title_activity_restaurant_list">RestaurantList</string>
 
 </resources>

@@ -45,7 +45,11 @@
             android:name=".Register"
             android:label="@string/title_activity_register"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Timeline"></activity>
+        <activity android:name=".Timeline" />
+        <activity
+            android:name=".RestaurantList"
+            android:label="@string/title_activity_restaurant_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
