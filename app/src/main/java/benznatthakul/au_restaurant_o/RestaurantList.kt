@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 
 import kotlinx.android.synthetic.main.activity_restaurant_list.*
+import kotlinx.android.synthetic.main.content_restaurant_list.*
 import kotlinx.android.synthetic.main.restaurant_ticket_1.view.*
 
 class RestaurantList : AppCompatActivity() {
@@ -35,7 +36,7 @@ class RestaurantList : AppCompatActivity() {
         listOfRestaurant.add(RestaurantObj("Restaurant 10", "Description of Restaurant", R.drawable.store010))
         adapter = RestaurantAdapter(this,listOfRestaurant)
 
-        gvListRestaurant.adapter
+        gvListRestaurant.adapter = adapter
 
 //        TODO: CHANGE TO ADD BUTTON
         fab.setOnClickListener { view ->
