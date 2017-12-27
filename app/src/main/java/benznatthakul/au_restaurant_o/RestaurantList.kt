@@ -55,13 +55,11 @@ class RestaurantList : AppCompatActivity() {
         }
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
             val restaurant = this.listOfRestaurant[position]
-            var infaltor = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            var RestaurantView = infaltor.inflate(R.layout.restaurant_ticket_1, null)
+            var inflator = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            var RestaurantView = inflator.inflate(R.layout.restaurant_ticket_1, null)
             RestaurantView.ivRestaurantImage.setImageResource(restaurant.image!!)
             RestaurantView.tvName.text = restaurant.name!!
             return RestaurantView
-
-
 
         }
 

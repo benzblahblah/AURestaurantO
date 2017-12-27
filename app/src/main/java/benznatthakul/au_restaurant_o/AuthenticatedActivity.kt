@@ -20,7 +20,7 @@ class AuthenticatedActivity : AppCompatActivity() {
         var btnLogout = findViewById<Button>(R.id.btnLogout)
 
         btnLogout.setOnClickListener(View.OnClickListener {
-            // Logout
+            // Logout from Facebook
             if (AccessToken.getCurrentAccessToken() != null) {
                 GraphRequest(AccessToken.getCurrentAccessToken(), "/me/permissions/", null, HttpMethod.DELETE, GraphRequest.Callback {
                     AccessToken.setCurrentAccessToken(null)

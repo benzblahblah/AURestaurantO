@@ -3,6 +3,7 @@ package benznatthakul.au_restaurant_o
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.annotation.NonNull
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -23,8 +24,14 @@ class Timeline : AppCompatActivity() {
         setContentView(R.layout.activity_timeline)
 
         BtnHomeP.setOnClickListener(View.OnClickListener {
-            view -> homepage()
+            homepage()
         })
+
+
+        btnLogout.setOnClickListener(View.OnClickListener {
+            logout()
+        })
+
 
         val nameTxt = findViewById<View>(R.id.dispTxt) as TextView
 
@@ -44,6 +51,12 @@ class Timeline : AppCompatActivity() {
 
     }
 
+    private fun logout() {
+//        mAuth.signOut()
+        Toast.makeText(this, "Signed Out", Toast.LENGTH_LONG).show()
+        startActivity(Intent(this, MainActivity::class.java))
+    }
+
 
 //    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 //        menuInflater.inflate(R.menu.menu, menu)
@@ -57,7 +70,7 @@ class Timeline : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         if (item!!.itemId == R.id.btnLogout) {
             mAuth.signOut()
-            Toast.makeText(this, "Signed Out :(", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Signed Out", Toast.LENGTH_LONG).show()
             startActivity(Intent(this, MainActivity::class.java))
         }
 

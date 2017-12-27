@@ -1,5 +1,6 @@
 package benznatthakul.au_restaurant_o
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -26,7 +27,7 @@ class Register : AppCompatActivity() {
         mDatabase = FirebaseDatabase.getInstance().getReference("Names")
 
         regBtn.setOnClickListener(View.OnClickListener {
-            view -> register ()
+            register ()
         })
     }
 
@@ -45,9 +46,11 @@ class Register : AppCompatActivity() {
                     val user = mAuth.currentUser
                     val uid = user!!.uid
                     mDatabase.child(uid).child("Name").setValue(name)
-                    Toast.makeText(this, "Successfully signed in: ", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Successfully Sign Up!", Toast.LENGTH_LONG).show()
+                    startActivity(Intent(applicationContext, Timeline::class.java))
+
                 } else {
-                    Toast.makeText(this, "Error:(", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Some error occurs!, please try another Email or password.", Toast.LENGTH_LONG).show()
                 }
             })
 
