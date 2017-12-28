@@ -36,13 +36,12 @@ class MainActivity : AppCompatActivity() {
         val btnLoginEmail = findViewById<Button>(R.id.btnLoginEmail)
         val regTxt = findViewById<View>(R.id.regTxt) as TextView
 
-
         btnLoginEmail.setOnClickListener(View.OnClickListener {
-            view -> login()
+            login()
         })
 
         regTxt.setOnClickListener(View.OnClickListener {
-            view -> register()
+            register()
         })
 
         var btnLoginFacebook = findViewById<Button>(R.id.btnLoginFacebook)

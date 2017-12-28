@@ -32,7 +32,6 @@ class Timeline : AppCompatActivity() {
             logout()
         })
 
-
         val nameTxt = findViewById<View>(R.id.dispTxt) as TextView
 
         var uid = user!!.uid
