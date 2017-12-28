@@ -8,7 +8,7 @@
     tools:context="benznatthakul.au_restaurant_o.Register">
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout3"
+        android:id="@+id/restaurantNameA"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginTop="100dp"
@@ -32,7 +32,7 @@
         android:layout_marginTop="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/restaurantNameA">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/passwordTxt"
@@ -84,7 +84,7 @@
         android:text="@string/sign_up"
         android:textAlignment="center"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+        app:layout_constraintBottom_toTopOf="@+id/restaurantNameA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

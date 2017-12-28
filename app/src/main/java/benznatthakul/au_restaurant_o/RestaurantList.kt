@@ -49,8 +49,9 @@ class RestaurantList : AppCompatActivity() {
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Navigate to adding page.", Snackbar.LENGTH_LONG)
                     .setAction("Add Restaurant", null).show()
-        }
+            gotoadding()
 
+        }
 
 //        TODO: PAGE VIEWER IMAGE SLIDER
 //        var adapter: PagerAdapter = PageView(this,path)
@@ -69,6 +70,10 @@ class RestaurantList : AppCompatActivity() {
 //                Toast.makeText(this@RestaurantList, path[position], Toast.LENGTH_LONG).show()
 //            }
 //        })
+    }
+
+    private fun gotoadding() {
+        startActivity(Intent(applicationContext, AddingRestaurant::class.java))
     }
 
     class RestaurantAdapter: BaseAdapter {

@@ -61,9 +61,6 @@ class PageView : PagerAdapter {
         return rv
     }
 
-
-
-
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
         container.removeView(`object` as RelativeLayout)
     }
