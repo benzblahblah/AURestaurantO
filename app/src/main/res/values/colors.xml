@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#d3d4d4d4</color>
+
+    <color name="aus1">#f17070</color>
+    <color name="aus2">#CF4141</color>
+    <color name="aus3">#300e0e</color>
+    <color name="aus4">#B12222</color>
+
+    <color name="aus5">#146A6A</color>
+    <color name="aus6">#439191</color>
+    <color name="aus7">#277C7C</color>
+    <color name="aus8">#065656</color>
+    <color name="aus9">#003D3D</color>
+
+    <color name="aus10">#b9e169</color>
+    <color name="aus11">#95c13d</color>
+    <color name="aus12">#5C8609</color>
+    <color name="aus13">#79a520</color>
+    <color name="aus14">#3f5f00</color>
+    <color name="aus15">#ff9393</color>
+    <color name="Adding">#c1ff44</color>
+
+
+</resources>
