@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="benznatthakul.au_restaurant_o.FoodMenuList"
+    tools:showIn="@layout/activity_food_menu_list">
+
+
+    <GridView
+        android:id="@+id/gvListFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="64pt"
+        android:horizontalSpacing="5pt"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="5pt" />
+
+</android.support.constraint.ConstraintLayout>

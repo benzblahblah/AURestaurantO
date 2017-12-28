@@ -24,7 +24,11 @@ class Timeline : AppCompatActivity() {
         setContentView(R.layout.activity_timeline)
 
         BtnHomeP.setOnClickListener(View.OnClickListener {
-            homepage()
+            restaurantList()
+        })
+
+        MenuBtn.setOnClickListener(View.OnClickListener {
+            menupage()
         })
 
 
@@ -50,6 +54,10 @@ class Timeline : AppCompatActivity() {
 
     }
 
+    private fun menupage() {
+        startActivity(Intent(this, FoodMenuList::class.java))
+    }
+
     private fun logout() {
 //        mAuth.signOut()
         Toast.makeText(this, "Signed Out", Toast.LENGTH_LONG).show()
@@ -62,7 +70,7 @@ class Timeline : AppCompatActivity() {
 //        return super.onCreateOptionsMenu(menu)
 //    }
 
-    private fun homepage() {
+    private fun restaurantList() {
         startActivity(Intent(this, RestaurantList :: class.java))
     }
 

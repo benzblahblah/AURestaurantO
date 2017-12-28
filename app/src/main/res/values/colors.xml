@@ -7,7 +7,7 @@
     <color name="gray">#d3d4d4d4</color>
 
     <color name="aus1">#f17070</color>
-    <color name="aus2">#CF4141</color>
+    <color name="aus2">#cf4141</color>
     <color name="aus3">#300e0e</color>
     <color name="aus4">#B12222</color>
 
@@ -23,7 +23,7 @@
     <color name="aus13">#79a520</color>
     <color name="aus14">#3f5f00</color>
     <color name="aus15">#ff9393</color>
-    <color name="Adding">#c1ff44</color>
+    <color name="Adding">#ffffff</color>
 
 
 </resources>

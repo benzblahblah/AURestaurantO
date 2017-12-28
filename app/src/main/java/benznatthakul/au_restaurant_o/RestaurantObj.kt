@@ -15,5 +15,4 @@ class RestaurantObj {
     var des: String? = null
     var image: Int? = null
 
-
 }
