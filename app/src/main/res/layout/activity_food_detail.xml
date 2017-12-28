@@ -13,7 +13,7 @@
         android:layout_below="@+id/tvPrice"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp"
-        android:text="@string/caption"
+        android:text="caption"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/menu_name"
+        android:text="menu_name"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,7 @@
         android:layout_below="@+id/tvName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        android:text="@string/price"
+        android:text="price"
         android:textSize="30sp" />
 
 

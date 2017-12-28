@@ -5,14 +5,17 @@ package benznatthakul.au_restaurant_o
  */
 class RestaurantObj {
 
-    constructor(name: String?, des: String?, image: Int?) {
-        this.name = name
-        this.des = des
-        this.image = image
-    }
-
     var name: String? = null
     var des: String? = null
     var image: Int? = null
+    var addr: String? = null
+    var tel: String? = null
 
+    constructor(name: String?, des: String?, image: Int?, addr: String?, tel: String?) {
+        this.name = name
+        this.des = des
+        this.image = image
+        this.addr = addr
+        this.tel = tel
+    }
 }

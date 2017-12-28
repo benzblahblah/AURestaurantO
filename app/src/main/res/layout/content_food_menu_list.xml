@@ -8,7 +8,6 @@
     tools:context="benznatthakul.au_restaurant_o.FoodMenuList"
     tools:showIn="@layout/activity_food_menu_list">
 
-
     <GridView
         android:id="@+id/gvListFood"
         android:layout_width="match_parent"

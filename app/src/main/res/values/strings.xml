@@ -16,8 +16,5 @@
     <string name="select_image">SELECT IMAGE</string>
     <string name="save">Save</string>
     <string name="title_activity_food_menu_list">FoodMenuList</string>
-    <string name="caption">Caption</string>
-    <string name="menu_name">Menu Name</string>
-    <string name="price">Price</string>
 
 </resources>

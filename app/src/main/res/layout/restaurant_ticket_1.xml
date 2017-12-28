@@ -30,4 +30,5 @@
             android:text="Store 1"
             android:textSize="18sp" />
     </LinearLayout>
+
 </LinearLayout>

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "143625290251-c75esdi7ataujh0b8ebjuja3av9boi6s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "benznatthakul.au_restaurant_o",
+            "certificate_hash": "da32e38520fcb193a70cc6ae74adcc07803e3fab"
+          }
+        },
+        {
           "client_id": "143625290251-puchu8uqhc6ket5qvb5r5ov1r2os4nii.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
