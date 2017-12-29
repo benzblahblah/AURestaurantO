@@ -54,7 +54,8 @@ class MainActivity : AppCompatActivity() {
                     object : FacebookCallback<LoginResult> {
                         override fun onSuccess(loginResult: LoginResult) {
                             Log.d("MainActivity", "Facebook token: " + loginResult.accessToken.token)
-                            startActivity(Intent(applicationContext, AuthenticatedActivity::class.java))
+//                            startActivity(Intent(applicationContext, AuthenticatedActivity::class.java))
+                            startActivity(Intent(applicationContext, Timeline::class.java))
                         }
 
                         override fun onCancel() {

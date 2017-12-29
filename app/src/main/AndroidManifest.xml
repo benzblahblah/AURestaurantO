@@ -14,11 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!-- Facebook SDK -->
@@ -58,7 +54,15 @@
             android:name=".FoodMenuList"
             android:label="@string/title_activity_food_menu_list"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".FoodDetail"></activity>
+        <activity android:name=".FoodDetail" />
+        <activity android:name=".Splash">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

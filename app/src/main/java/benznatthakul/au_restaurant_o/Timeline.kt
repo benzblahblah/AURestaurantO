@@ -7,8 +7,13 @@ import android.support.annotation.NonNull
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.facebook.AccessToken
+import com.facebook.GraphRequest
+import com.facebook.HttpMethod
+import com.facebook.login.LoginManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_register2.*
@@ -22,6 +27,20 @@ class Timeline : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timeline)
+
+        var btnLogout = findViewById<Button>(R.id.btnLogout)
+
+        btnLogout.setOnClickListener(View.OnClickListener {
+            // Logout from Facebook
+            if (AccessToken.getCurrentAccessToken() != null) {
+                GraphRequest(AccessToken.getCurrentAccessToken(), "/me/permissions/", null, HttpMethod.DELETE, GraphRequest.Callback {
+                    AccessToken.setCurrentAccessToken(null)
+                    LoginManager.getInstance().logOut()
+
+                    finish()
+                }).executeAsync()
+            }
+        })
 
         BtnHomeP.setOnClickListener(View.OnClickListener {
             restaurantList()
