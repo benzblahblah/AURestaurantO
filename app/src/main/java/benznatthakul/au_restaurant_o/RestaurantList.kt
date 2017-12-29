@@ -153,10 +153,10 @@ class RestaurantList : AppCompatActivity() {
             }
 
 //            TODO - Delete shop
-//            RestaurantView.fabDbtn.setOnClickListener {
-//                var dbRef = FirebaseDatabase.getInstance().getReference()
-//                dbRef.child("shop").child(restaurant.shop_id).removeValue()
-//            }
+            RestaurantView.delbtn.setOnClickListener {
+                var dbRef = FirebaseDatabase.getInstance().getReference()
+                dbRef.child("shop").child(restaurant.shop_id).removeValue()
+            }
 
             return RestaurantView
         }

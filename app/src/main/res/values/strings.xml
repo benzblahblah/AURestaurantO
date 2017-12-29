@@ -16,5 +16,6 @@
     <string name="select_image">SELECT IMAGE</string>
     <string name="save">Save</string>
     <string name="title_activity_food_menu_list">FoodMenuList</string>
+    <string name="delete">Delete</string>
 
 </resources>
