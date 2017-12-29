@@ -45,6 +45,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
                 android:text="Restaurant Name"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"

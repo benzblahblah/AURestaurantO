@@ -34,6 +34,7 @@
             android:id="@+id/delbtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
             android:background="@color/aus2"
             android:text="@string/delete"
             android:textColor="@color/white" />

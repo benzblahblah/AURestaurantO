@@ -55,22 +55,26 @@ class RestaurantList : AppCompatActivity() {
             override fun onCancelled(p0: DatabaseError?) {
                 Toast.makeText(applicationContext,"Failed to get res",Toast.LENGTH_LONG)
                 Log.d("WVN","Failed")
+
             }
 
             override fun onDataChange(p0: DataSnapshot?) {
                 Toast.makeText(applicationContext,"Loaded res",Toast.LENGTH_LONG)
                 Log.d("WVN","Loaded")
+                shopList.clear()
                 if(p0!!.exists()){
-                    shopList.clear()
+//                    shopList.clear()
                     for(s in p0.children){
                         val shop = s.getValue(shop::class.java)
                         shopList.add(shop!!)
                     }
-                    adapter = RestaurantAdapter(applicationContext, shopList)
+//                    adapter = RestaurantAdapter(applicationContext, shopList)
 
-                    gvListRestaurant.adapter = adapter
+//                    gvListRestaurant.adapter = adapter
 
                 }
+                adapter = RestaurantAdapter(applicationContext, shopList)
+                gvListRestaurant.adapter = adapter
             }
 
         })
@@ -156,6 +160,7 @@ class RestaurantList : AppCompatActivity() {
             RestaurantView.delbtn.setOnClickListener {
                 var dbRef = FirebaseDatabase.getInstance().getReference()
                 dbRef.child("shop").child(restaurant.shop_id).removeValue()
+
             }
 
             return RestaurantView
